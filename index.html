@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Simple Expense Manager</Title>
+    <style>
+        .subject {
+            opacity: 0;
+            display: inline-block;
+            padding-right: 30px;
+            padding-bottom: 70px;
+        }
+        
+        .b1 {
+            animation: ani1 12s infinite;
+        }
+        
+        .b2 {
+            animation: ani2 12s infinite;
+        }
+        
+        .b3 {
+            animation: ani3 12s infinite;
+        }
+        
+        @keyframes ani1 {
+            0% {
+                opacity: 0;
+            }
+            15% {
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ani2 {
+            30% {
+                opacity: 0;
+            }
+            45% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ani3 {
+            60% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        #header {
+            padding: 35px;
+        }
+        
+        #logo {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 35px;
+        }
+        
+        #logotitle {
+            display: inline-block;
+            padding-right: 45px;
+            font-size: 150%;
+            font-style: oblique;
+            color: azure;
+            padding-bottom: 35px;
+        }
+        
+        #headersubject {
+            display: inline-block;
+            position: relative;
+        }
+        
+        #top {
+            text-align: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("banner.png");
+        }
+        
+        #menubar {
+            display: inline-block;
+            padding: 25px;
+            text-decoration: none;
+            color: azure;
+            font-style: italic;
+            font-size: 110%;
+        }
+        
+        #login {
+            padding: 25px;
+            background-color: #7C3E66;
+            border-radius: 25px;
+            text-decoration: none;
+            color: azure;
+            font-size: 110%;
+            display: inline-block;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #top2 {
+            padding: 35px;
+        }
+        
+        #subjecthead {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 200%;
+            color: azure;
+        }
+        
+        #subjecttext {
+            color: azure;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #getstarted {
+            padding: 25px;
+            background-color: #7C3E66;
+            border-radius: 25px;
+            text-decoration: none;
+            color: azure;
+            font-size: 110%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #part2 {
+            padding: 35px;
+            background-color: #F2EBE9;
+        }
+        
+        #part2head {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #243A73;
+            text-align: center;
+        }
+        
+        #part2para {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-size: 110%;
+        }
+        
+        #part3blocks {
+            display: inline-block;
+            padding: 65px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #part3subheads {
+            text-align: center;
+        }
+        
+        #part3subblock {
+            align-content: center;
+        }
+        
+        #part3 {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="header">
+            <div id="logo"><img src="icon.png" width="50" height="50"></div>
+            <div id="logotitle">Simple Expense Manager</div>
+            <div id="headersubject">
+                <a href="budget_buddy.html">
+                    <div id="menubar">Budget Buddy</div>
+                </a>
+                <a href="mandatorybills.html">
+                    <div id="menubar">Mandatory Bills</div>
+                </a>
+                <a href="taxes.html">
+                    <div id="menubar">Taxes</div>
+                </a>
+                <a href="investments.html">
+                    <div id="menubar">Investments</div>
+                </a>
+                <a href="front.html" target="_blank">
+                    <div id="login">SIGN IN/SIGN UP</div>
+                </a>
+            </div>
+        </div>
+        <div id="top2">
+            <div class="subject b1">
+                <div id="subjecthead">Budget Buddy</div>
+                <div id="subjecttext">An easy way to manage your day to day expenses</div>
+            </div>
+            <div class="subject b2">
+                <div id="subjecthead">Mandatory Bills</div>
+                <div id="subjecttext">Your daily mandatory bills are managed here</div>
+            </div>
+            <div class="subject b3">
+                <div id="subjecthead">Taxes</div>
+                <div id="subjecttext">Having headache due to too
+                    <br/> many taxes,do not worry we are here for you
+                </div>
+            </div>
+            <div>
+                <a href="createacc.html" target="_blank" id="getstarted">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div id="part2">
+        <h1 id="part2head">Free of Cost solution for all Expenses!</h1>
+        <p id="part2para">With our Expense Management tool, capture all expenses made for different purposes, including Investements, directly on a single platform. Our easy-to-use tool is free of cost and will ensure that you can effortlessly reconcile and reimburse all
+            expenditures made by your household.</p>
+    </div>
+    <div id="part3">
+        <div>
+            <h1 id="part2head">Why use Simple Expense Manager?</h1>
+        </div>
+        <div id="part3subblock" align="center">
+            <div id="part3blocks">
+                <div id="part3subheads">
+                    <img src="pig.png" height="70" width="70">
+                    <h2>Save Expenses</h2>
+                </div>
+                <div>
+                    Corporate expense management<br/> automation helps in reducing leakage in<br/> household expenses.
+                </div>
+            </div>
+            <div id="part3blocks">
+                <div id="part3subheads">
+                    <img src="purse.png" height="70" width="70">
+                    <h2>Seamless Process</h2>
+                </div>
+                <div>
+                    Same platform is used to record the entire<br/> travel expenses as well as other spends,<br/> making the process seamless.
+                </div>
+            </div>
+            <div id="part3blocks">
+                <div id="part3subheads">
+                    <img src="coin.png" height="70" width="70">
+                    <h2>Free of Cost</h2>
+                </div>
+                <div>
+                    It is completely free of cost unlike other<br/> expense management tools in the market.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

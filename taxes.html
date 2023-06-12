@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Bills</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script src="assets/js/index.js"></script>
+    <div id="mbillsh1" >
+        
+        <fieldset style="background-color:#A5BECC ; border: 0cm; padding: 40px; border-radius: 2%;">
+            
+            <h1>Do You know How Much You pay in taxes every Year?</h1>
+            <br>
+            <h2>Let's keep a track of it!!</h2>
+            
+        </fieldset>
+        <br>
+        <h2 id="mbillssub">Add All the taxes you have been paying!</h2>
+        <div id="inputmbills">
+            <table cellspacing="12px">
+                <tr>
+                    <td>
+                        <label for="inputt">Enter Tax :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="inputt" name="inputt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputta">Enter Amount :</label>
+                    </td>
+                    <td>
+                        <input type="number" id="inputta" name="inputcost">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputtd"> Enter Due date :</label>
+                    </td>
+                    <td>
+                        <input type="date" id="inputtd" name="inputdate">
+                    </td>
+                </tr>
+            </table>
+            
+            <button onclick="addtax()"  style="border: 10px; padding: 1% ; background-color: black; color: antiquewhite; border-radius: 5%;" value="add bill">Add Tax</button>
+            <br>
+            <br>
+           
+            
+        </div>
+        <div id="tablebills">
+            <table class="styled-table" id="tablem">
+                <thead>
+                    <tr>
+                        <th>Tax</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                    <!-- and so on... -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

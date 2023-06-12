@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin-top: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("https://angelofshiva.com/resources/assets/images/client%20login.png");
+        }
+
+        #right {
+            margin: auto;
+            background: rgb(165,190,204, 0.5);
+            width: 40%;
+            border: 1px solid rgb(165,190,204, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 980px) {
+            #right {
+
+                flex-flow: wrap;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+            }
+        }
+
+        #right h5 {
+            font-size: 2vmax;
+            line-height: 0;
+            text-align: center;
+            color: white;
+        }
+
+
+        #right .inputs {
+            overflow: hidden;
+        }
+
+        .input-container {
+            margin-left: 15px;
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        /* Style the form icons */
+        .icon {
+            padding: 10px;
+            color: black;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        #username,#email,#pass,#pass1{
+            width: 65%;
+            border-radius: 3px;
+            border: 0;
+        }
+        #right button {
+            margin: auto;
+            color:green;
+            font-size: 15px;
+            border: 0;
+            outline: 0;
+            background-color: white;
+            opacity: 0.7;
+            border-radius: 10px;
+            width: 120px;
+            height: 50px;
+        }
+
+        #right button:hover{
+            color: white;
+            background-color: green;
+        }
+
+
+        #right #title span a {
+            margin-top:10px;
+            margin-left: 20px;
+            background:white;
+            color: linear-gradient(red,blue,yellow,green);
+            margin-top: 10px;
+            padding: 14px 50px;
+            border-radius: 100px;
+            display: inline-block;
+            box-shadow: 0 3px 6px 1px #042d4657;
+            text-decoration: none;
+        }
+        #cont{
+            font-size: 25px;
+            text-align: center;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            width: 90%;
+            border-radius: 5px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="right">
+        <div id="title">
+            <h5>SIGN UP</h5>
+            <span>
+                <a href="""><i class="fa fa-google" aria-hidden="true"></i> Sign up with Google</a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Sign up with Facebook</a>
+            </span>
+        </div>
+        <br>
+        <div class="inputs">
+            <div id="cont">Continue using details</div>
+            <br>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <br>
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <br>
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+            <br>
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" id="pass1" placeholder="Confirm Password">
+            </div>
+        </div>
+        <br>
+        <button onclick="">SIGN UP</button>
+    </div>
+</body>
+
+</html>

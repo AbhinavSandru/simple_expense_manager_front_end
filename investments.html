@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Bills</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script src="assets/js/index.js"></script>
+    <div id="mbillsh1" >
+        
+        <fieldset style="background-color:#A5BECC ; border: 0cm; padding: 40px; border-radius: 2%;">
+            
+            <h1>Keep Track Of All of your investments at one place!!</h1>
+            <br>
+            
+            
+        </fieldset>
+        <br>
+        <h2 id="mbillssub">Add the investments you have made, and just leave it to us. We will never forget</h2>
+        <div id="inputmbills">
+            <table cellspacing="12px">
+                <tr>
+                    <td>
+                        <label for="inputi">Enter the type of Investment :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="inputi" name="inputi">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputamount">Enter Amount :</label>
+                    </td>
+                    <td>
+                        <input type="number" id="inputamount" name="inputcost">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputdatei"> Enter Date Of Investment:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="inputdate" name="inputdate">
+                    </td>
+                </tr>
+            </table>
+            
+            <button onclick="investments()"  style="border: 10px; padding: 1% ; background-color: black; color: antiquewhite; border-radius: 5%;" value="add bill">Add Bill</button>
+            <br>
+            <br>
+           
+            
+        </div>
+        <div id="tablebills">
+            <table class="styled-table" id="tablem">
+                <thead>
+                    <tr>
+                        <th>Investment</th>
+                        <th>Amount</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                    <!-- and so on... -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

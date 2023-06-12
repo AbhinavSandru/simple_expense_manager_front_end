@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-image: linear-gradient(135deg, #A5BECC 100%, #F2EBE9 10%);
+        }
+
+        #maindiv {
+            margin: auto;
+            width: 70%;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            box-shadow: 0 0 20px 6px #090b6f85;
+        }
+
+        @media (max-width: 980px) {
+            #maindiv {
+                background-color: white;
+                flex-flow: wrap;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+            }
+        }
+
+        #maindiv #left {
+            width: 100%;
+            background-image: url("https://img.freepik.com/free-photo/hand-holding-dollar-banknote-money-wood-background_1150-6882.jpg?w=2000");
+            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        #maindiv #left span p {
+            margin-top:100px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        #maindiv #left span a {
+            margin-top:10px;
+            background:white;
+            color: linear-gradient(red,blue,yellow,green);
+            margin-top: 10px;
+            padding: 14px 50px;
+            border-radius: 100px;
+            display: inline-block;
+            box-shadow: 0 3px 6px 1px #042d4657;
+            text-decoration: none;
+        }
+
+        #maindiv #right {
+            background-color: white;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 980px) {
+            #maindiv #right {
+                width: 100%;
+            }
+        }
+
+        #maindiv #right h5 {
+            font-size: 5vmax;
+            line-height: 0;
+        }
+
+        #maindiv #right p {
+            font-size: 18px;
+            color: #B0B3B9;
+        }
+
+        #maindiv #right .inputs {
+            overflow: hidden;
+        }
+
+        #maindiv #right input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 25px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #B0B3B9;
+        }
+
+        #maindiv #right .remember-me--forget-password {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #maindiv #right .remember-me--forget-password input {
+            margin: 0;
+            margin-right: 7px;
+            width: auto;
+        }
+
+        #maindiv #right button {
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 35px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 0;
+            box-shadow: 0px 4px 20px 0px #49c628a6;
+            background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+        }
+
+        #ca {
+            font-size: x-large;
+        }
+
+        #title {
+            font-size: 5vmax;
+            line-height: 1;
+            font-weight: 900;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function loginval() {
+            var u = document.getElementById("uname").value;
+            var p = document.getElementById("pass").value;
+            if (u == "abhinav" && p == "ab123") {
+                window.location.href = "index.html"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="maindiv">
+        <div id="left">
+            <h1 id="title">Simple Expense Manager</h1>
+            <span>
+                <p>Login with social media</p>
+                <a href="""><i class="fa fa-google" aria-hidden="true"></i> Sign In with Google</a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i> Sign In with Twitter</a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Sign In with Facebook</a>
+            </span>
+        </div>
+        <div id="right">
+            <h5>LOGIN</h5>
+            <p id="ca">Don't have an account? <a href="createacc.html" target="_blank">Creat Your Account</a> it takes
+                less than a minute</p>
+            <div class="inputs">
+                <input type="text" id="username" placeholder="Username">
+                <br>
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+            <div class="remember-me--forget-password">
+                <label>
+                    <input type="checkbox" name="item" checked />
+                    <span class="text-checkbox">Remember me</span>
+                </label>
+                <p>forgot password?</p>
+            </div>
+
+            <br>
+            <button onclick="loginval()">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

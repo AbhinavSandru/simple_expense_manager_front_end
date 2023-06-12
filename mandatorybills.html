@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Bills</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script src="assets/js/index.js"></script>
+    <div id="mbillsh1" >
+        
+        <fieldset style="background-color:#A5BECC ; border: 0cm; padding: 40px; border-radius: 2%;">
+            <h2>No Not again!!</h2>
+            <h1>Missed the date to pay your bills?</h1>
+            <br>
+            <h2>We have got your back!</h2>
+            
+        </fieldset>
+        <br>
+        <h2 id="mbillssub">Just Add the bills You need to pay every Month, We are here to keep track of it</h2>
+        <div id="inputmbills">
+            <table cellspacing="12px">
+                <tr>
+                    <td>
+                        <label for="inputm">Enter Bill :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="inputm" name="inputm">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputcost">Enter Amount :</label>
+                    </td>
+                    <td>
+                        <input type="number" id="inputcost" name="inputcost">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inputdate"> Enter Due date :</label>
+                    </td>
+                    <td>
+                        <input type="date" id="inputdate" name="inputdate">
+                    </td>
+                </tr>
+            </table>
+            
+            <button onclick="addbill()"  style="border: 10px; padding: 1% ; background-color: black; color: antiquewhite; border-radius: 5%;" value="add bill">Add Bill</button>
+            <br>
+            <br>
+           
+            
+        </div>
+        <div id="tablebills">
+            <table class="styled-table" id="tablem">
+                <thead>
+                    <tr>
+                        <th>Bill</th>
+                        <th>Amount</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                    <!-- and so on... -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
